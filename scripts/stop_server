@@ -1,4 +1,6 @@
 #!/bin/bash
+systemctl enable httpd
+systemctl start httpd
 isExistApp = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then
     service httpd stop        
