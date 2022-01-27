@@ -1,2 +1,4 @@
 #!/bin/bash
+rm -rf /var/www/html/*
+git clone https://github.com/Likith2919/aws_codedeploy_using_github.git /var/www/html/
 service httpd start
